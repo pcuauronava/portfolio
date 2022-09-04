@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+  <title>
+    Contact me
+  </title>
+</head>
+<body>
+  <div>
+    <div class="main-title">
+      <h1>Contact</h1>
+    </div>
+    <figure class="frame">
+      <img src="images/patpic.jpg" alt="Pat">
+    </figure>
+  </div>
+  <!-- Visible part of the webpage in the browser -->
+  <nav>
+    <ul>
+      <li><a href="index.html"> Home </a></li>
+      <li><a href="showcase.html"> Showcase </a></li>
+      <!--<li><a href="contact.html"> Contact </a></li>-->
+    </ul>
+  </nav>
+  <header>
+    <h2>Register Today</h2>
+  </header>
+  <!-- Main element is to designate the main topic of the website -->
+  <main>
+<div>
+  <div id="form">
+    <h2>Complete the form below to begin your journey.</h2>
+    <form class="form-grid"> <!-- Start Form -->
+      <fieldset>
+        <legend>Customer Information</legend>
+        <label for="fName">First Name:</label>
+        <input type="text" name="fName" id="fName" required>
+        <label for="lName">Last Name:</label>
+        <input type="text" name="lName" id="lName" required>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </fieldset>
+      <fieldset>
+        <legend>Additional Information</legend>
+        <p>I would like more information about:</p>
+        <label for="electronics"><input type="checkbox" name="interest" id="electronics" value="Electronics">Electronics</label>
+        <label for="tutoring"><input type="checkbox" name="interest" id="tutoring" value="Tutoring">Tutoring</label>
+        <label for="webdev"><input type="checkbox" name="interest" id="webdev" value="Development">Development</label>
+      </fieldset>
+      <fieldset>
+        <legend>Referral Source</legend>
+        <label for="reference">How did you find us?</label>
+        <select name="reference" id="reference">
+          <option value="ad">Advertisement</option>
+          <option value="friend">Friend</option>
+          <option value="google">Google</option>
+          <option value="social">Social Media</option>
+          <option value="other">Other</option>
+        </select>
+      </fieldset>
+      <label for="questions"> Questions?</label>
+      <textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+      <input type="button" id="submit" value ="Submit" class="btn">
+    </form>
+  </div>
+</div>
+<div id="map1">
+  <h5>
+Bellevue University
+  </h5>
+    <iframe class="iframe1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3572.684451452754!2d-95.92076485855712!3d41.150731164632404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8793886a86ca807f%3A0x838e857240d175eb!2sBellevue%20University!5e0!3m2!1sen!2sus!4v1662249567097!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</main>
+<footer class="mobile">
+  <h6>
+    If you can see this you're in a handheld device or in a device with less 320px wide.
+  </h6>
+</footer>
+<footer class="tablet">
+  <h5>
+    If you're seeing this you're in a tablet or in a device with more than 320 and less than 800 pixeles.
+  </h5>
+</footer>
+<footer class="desktop">
+  <h4>
+    If you're seeing this you're in a desktop or in a device with more than 800px wide.
+  </h4>
+</footer>
+</body>
+</html>

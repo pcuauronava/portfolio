@@ -1,0 +1,425 @@
+/* CSS Reset */
+body, header, nav, main, footer, div, h1, img, ul, figure, figcaption, grid, grid1, grid-image, article, section, table, th, tr, td, form, fieldset, input, select, textarea, legend, label {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+/*round the borders*/
+body {
+	background-color: #ccc;
+}
+/* I selected the font-family "Trebuchet MS", Helvetica, sans-serif for this section */
+main {
+	border: 1px solid #fff;
+	border-radius: 7px;
+	background-color: #cbd8e9;
+	padding: 2%;
+	font-size: 1.15em;
+	font-family: Garamond, sans-serif;
+}
+.tel-link {
+	background-color: #f3efe8;
+	padding: 2%;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	border-radius: 5px;
+}
+.tel-link a {
+	color: #f00;
+	text-decoration: none;
+	font-size: 1.5em;
+	display: block;
+}
+.hours {
+	margin-left: 10%;
+}
+.container {
+	margin: 0 auto;
+	width: 100%
+}
+/*I wanted to use the gray background for the body*/
+nav {
+	padding: 1%;
+	margin-bottom: 1%;
+}
+/*This is to eliminate the bullets on the list*/
+nav ul {
+	list-style-type: none;
+	text-align: center;
+}
+nav li {
+	font-size: 1.5em;
+	border-top: 1px solid #fff;
+	font-family: Garamond, sans-serif;
+}
+/*This line is to eliminate the line of the first item on the list only using structural-pseudo-class*/
+nav li a {
+	display: block;
+	color: #ff0000;
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
+/* same with this to remove the bullets */
+li{
+	list-style-type: none;
+}
+/* changed the font family and the size of the id header1 only */
+#header1 {
+	font-family: Garamond, serif;
+	font-size: 30px;
+}
+/* Remove the underline from the links*/
+a {
+	text-decoration: none;
+}
+/* changed the font family and the size of the id main3 only */
+#main3 {
+	font-family: verdana, sans-serif;
+	font-size: 12px;
+}
+/*  Viewport: Show Mobile, hide Tablet, hide Desktop class*/
+/*.container-map {
+width: auto;
+padding: 5px;
+}*/
+.iframe1 {
+	width: 90%;
+	height: calc(0.75*90%);
+	max-width: 600px;
+	max-height: 450px;
+	display: block;
+	border: solid 2px black;
+	margin:1em auto;
+	box-shadow:3px 3px 3px gray;
+	border-radius:4px;
+}
+.hero2 {
+	display: inline-grid;
+	width: 100%;
+}
+.grid {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	text-align: center;
+}
+/*grid separate from the grid.html page included after wards*/
+.grid1 {
+	display: grid;
+	grid-template-columns: auto;
+	text-align: left;
+}
+
+.grid-image {
+	display: flex;
+	max-width: 230px;
+	max-height: 180px;
+	padding: 10%;
+	margin: 7%;
+}
+grid.article{
+	display: inline-grid;
+	padding: 10%;
+	margin: 0 auto;
+}
+/*  Viewport: Show Mobile, hide Tablet, hide Desktop class*/
+@media screen and (max-width: 320px) {
+	.container {
+		margin: 0 auto;
+		width: 100%;
+	}
+	.frame {
+		display: flex;
+		top: 0;
+		width: 125px;
+		height: 125px;
+	}
+	.background1 {
+		display: none;
+		width: 125px;
+		height: 125px;
+		background-image: url(../images/background-test.png);
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.mobile {
+		display: block;
+	}
+	.tablet	{
+		display: none;
+	}
+	.desktop {
+		display: none;
+	}
+	header {
+		padding-bottom: 2%;
+	}
+	nav li {
+		border: solid 1px #006666;
+		background-color: #003333;
+		display: block;
+	}
+	nav li a {
+		color: #ffffff;
+		padding: 0.1em 0.75em;
+	}
+	main ul {
+		margin: 0 0 4% 10%;
+	}
+	nav li a:hover {
+		color: #ff8000;
+		background-color: #fff;
+	}
+	table, th, td {
+  border-collapse: collapse;
+	font-size: .8em;
+	}
+	td, th {
+  padding: 4px;
+	}
+	#form {
+		margin-top: 2%;
+		background-color: #f2f2f2;
+		padding: 2%;
+	}
+	#form h2 {
+		text-align: center;
+	}
+	 /* Style rules for form elements */
+	fieldset, input, select, textarea {
+	margin-bottom: 2%;
+	}
+	fieldset legend {
+	font-weight: bold;
+	font-size: 1.25em;
+	}
+	label {
+		display: block;
+		padding-top: 3%;
+	}
+	form #submit {
+		margin: 0 auto;
+		border: none;
+		display: block;
+		padding: 2%;
+		background-color: #b3b3b3;
+		font-size: 1em;
+		border-radius: 10px;
+	}
+}
+/*  Viewport: Hide Mobile, show Tablet, hide Desktop class*/
+@media screen and (min-width: 321px) and (max-width: 800px) {
+	.container {
+		margin: 0 auto;
+		width: 100%;
+	}
+	.frame{
+		display: flex;
+		top: 0;
+		width: 125px;
+		height: 125px;
+		opacity: 1;
+		padding: 5px;
+	}
+	.frame:hover {
+		opacity: 1;
+	}
+	.fig-text {
+		font-size: 0.4em;
+		text-align: center;
+		display: block;
+		padding: 3px;
+	}
+	.background1{
+		width: 982px;
+		height: 552px;
+		background-image: url(../images/background-test.png);
+		background-size: cover;
+		background-position: left;
+		background-repeat: no-repeat;
+	}
+	.mobile {
+		display: none;
+	}
+	.tablet	{
+		display: block;
+	}
+	.desktop	{
+		display: none;
+	}
+	header {
+		position: static;
+		padding-bottom: 2%;
+	}
+	nav li {
+		color: #ffffff;
+		border: solid 1px #006666;
+		background-color: #003333;
+		display: inline-block;
+	}
+	nav li:last-child {
+		border-right: none;
+	}
+	nav li a {
+		color: #ffffff;
+		padding: 0.1em 0.75em;
+	}
+	main ul {
+		margin: 0 0 4% 10%;
+	}
+	nav li a:hover {
+		color: #000;
+		background-color: #fff;
+	}
+	table, th, td {
+		border: 2px solid black;
+		border-collapse: collapse;
+		font-size: .8em;
+	}
+	td, th {
+		border: 1px solid black;
+		padding: 7px;
+	}
+	tr:nth-child(even) {
+		background-color: aquamarine;
+	}
+	tr:nth-child(odd) {
+		background-color: beige;
+	}
+	/* Tablet Viewport: Style rule for form element */
+	fieldset, input, select, textarea {
+	margin-bottom: 2%;
+	}
+	fieldset legend {
+	font-weight: bold;
+	font-size: 1.25em;
+	}
+	label {
+		display: block;
+		padding-top: 3%;
+	}
+	form #submit {
+		margin: 0 auto;
+		border: none;
+		display: block;
+		padding: 2%;
+		background-color: #b3b3b3;
+		font-size: 1em;
+		border-radius: 10px;
+	}
+	form {
+		width: 70%;
+		margin: 0 auto;
+	}
+}
+/*  Viewport: Hide Mobile, hide Tablet, show Desktop class*/
+@media screen and (min-width: 801px) {
+	.container {
+		margin: 0 auto;
+		width: 100%;
+	}
+	.frame{
+		display: flex;
+		top: 0;
+		width: 125px;
+		height: 125px;
+		opacity: 1;
+		padding: 5px
+	}
+	.frame:hover {
+		opacity: 1;
+	}
+	.fig-text {
+		font-size: 0.4em;
+		text-align: center;
+		display: block;
+		padding: 3px;
+	}
+	.background1{
+		width: 982px;
+		height: 552px;
+		background-image: url(../images/background-test.png);
+		background-size: cover;
+		background-position: left;
+		background-repeat: no-repeat;
+	}
+	.mobile {
+		display: none;
+	}
+	.tablet {
+		display: none;
+	}
+	.desktop {
+		display: block;
+	}
+	header {
+		position: static;
+		padding-bottom: 2%;
+	}
+	nav li {
+		color: #ffffff;
+		border: solid 1px #006666;
+		background-color: #003333;
+		display: inline-block;
+	}
+	nav li:last-child {
+		border-right: none;
+	}
+	nav li a {
+		color: #ffffff;
+		padding: 0.1em 0.75em;
+	}
+	nav li a:hover {
+		color: #000;
+		background-color: #fff;
+	}
+	main ul {
+		margin: 0 0 4% 10%;
+	}
+	table, th, td {
+		border: 2px solid black;
+	}
+	td, th {
+		border: 1px solid black;
+		padding: 10px;
+	}
+	tr:nth-child(even) {
+		background-color: aquamarine;
+	}
+	tr:nth-child(odd) {
+		background-color: beige;
+	}
+	/*Desktop Viewport: Style rules for forms elements*/
+	fieldset, input, select, textarea {
+	margin-bottom: 2%;
+	}
+	fieldset legend {
+	font-weight: bold;
+	font-size: 1.25em;
+	}
+	label {
+		display: block;
+		padding-top: 3%;
+	}
+	form #submit {
+		margin: 0 auto;
+		border: none;
+		display: block;
+		padding: 2%;
+		background-color: #b3b3b3;
+		font-size: 1em;
+		border-radius: 10px;
+	}
+	form {
+		width: auto;
+	}
+	.form-grid {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 20px;
+	}
+	.btn {
+		grid-column: 1 / span 3;
+	}
+}
