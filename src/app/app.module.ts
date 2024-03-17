@@ -8,6 +8,12 @@ import { AboutComponent } from './about/about.component';
 import { PresentationsComponent } from './presentations/presentations.component';
 import { DiagramsComponent } from './diagrams/diagrams.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { NavSidebarComponent } from './nav-sidebar/nav-sidebar.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -16,11 +22,17 @@ import { ProjectsComponent } from './projects/projects.component';
     AboutComponent,
     PresentationsComponent,
     DiagramsComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    NavSidebarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
