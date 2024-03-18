@@ -26,7 +26,5 @@ const app = initializeApp(firebaseConfig);
 //register as a developer in X (formerly twitter) and get the keys:
 // Access Token
 //
-// 71952854-ag2wu0wHXUF7wJTRcttc1BfGFGvyGlAjyMxp6FP0Z
 // Access Token Secret
 //
-// vcw3lnt7r0w8SPxZDfzWQwHktVv3I3gqVosDfYPLBjMQW
