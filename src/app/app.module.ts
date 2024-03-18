@@ -15,6 +15,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './footer/footer.component';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PresentationsComponent,
     DiagramsComponent,
     ProjectsComponent,
-    NavSidebarComponent
+    NavSidebarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

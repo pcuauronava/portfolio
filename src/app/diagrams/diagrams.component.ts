@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./diagrams.component.sass']
 })
 export class DiagramsComponent {
-
+  panelOpenState = false;
 }

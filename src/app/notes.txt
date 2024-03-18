@@ -1,0 +1,32 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyBDu-Aw4ibBhgyuO2BHs_7p_aDv5vZ2bFY",
+  authDomain: "portfolio-data-46a51.firebaseapp.com",
+  projectId: "portfolio-data-46a51",
+  storageBucket: "portfolio-data-46a51.appspot.com",
+  messagingSenderId: "869359154317",
+  appId: "1:869359154317:web:198c976f17bc103b1e1ec4",
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+// I find out the way to generate a schema using angular material, the video I have from Udemy Angular material explains
+// that if you use the command ng generate @angular/material:material-nav --name=nav it will generate a responsive navigation bar with the schema using the
+// name nav
+// I will use the schema to create the navigation bar for my portfolio
+// I changed the navigation bar for a responsive one using the command ng generate @angular/material:material-nav --name=nav
+// I will be researching the use of the apis for the social media
+
+//register as a developer in X (formerly twitter) and get the keys:
+// Access Token
+//
+// 71952854-ag2wu0wHXUF7wJTRcttc1BfGFGvyGlAjyMxp6FP0Z
+// Access Token Secret
+//
+// vcw3lnt7r0w8SPxZDfzWQwHktVv3I3gqVosDfYPLBjMQW
