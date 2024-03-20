@@ -17,6 +17,8 @@ import { MatListModule } from '@angular/material/list';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { ResumeComponent } from './resume/resume.component';
+import { FirebaseTestComponent } from './firebase-test/firebase-test.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { MatExpansionModule } from '@angular/material/expansion';
     DiagramsComponent,
     ProjectsComponent,
     NavSidebarComponent,
-    FooterComponent
+    FooterComponent,
+    ResumeComponent,
+    FirebaseTestComponent
   ],
   imports: [
     BrowserModule,
