@@ -7,7 +7,7 @@ import { AsyncPipe, NgIf } from '@angular/common';
 @Component({
   selector: 'app-nav-sidebar',
   templateUrl: './nav-sidebar.component.html',
-  styleUrls: ['./nav-sidebar.component.css']
+  styleUrls: ['./nav-sidebar.component.scss']
 })
 export class NavSidebarComponent {
   private breakpointObserver = inject(BreakpointObserver);

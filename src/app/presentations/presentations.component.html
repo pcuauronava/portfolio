@@ -1,1 +1,206 @@
-<p>presentations works!</p>
+<div class="row">
+    <div class="col-sm-12">
+
+        <!-- <div class="txtSearch"> -->
+        <!-- <input type="text" id="txtSearch" class="form-control" [formControl]="txtSearchControl"
+                placeholder="Search by name" /> -->
+        <!-- </div> -->
+
+        <!-- <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Description</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let presentation of presentations | async">
+                <tr>
+                    <td scope="row">
+                        <a href="/presentation-details/{{ presentation.presentationId}}">
+                        {{presentation.presentationId}}</a>
+                    </td>
+                    <td scope="row">
+                        {{presentation.title}}
+                    </td>
+                    <td>{{ presentation.description }}</td>
+
+                </tr>
+            </tbody>
+        </table> -->
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+
+                    <th scope="col">Title</th>
+                    <th scope="col">Description</th>
+                    <!-- <th scope="col">Video</th> -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">
+                        <strong>
+                            Technology Value Stream</strong>
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/WOC3GB8a8Yw?si=_h34Grxf6UfhEQcj"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </td>
+                    <td scope="row">
+                        A value stream is the sequence of activities required to deliver a product, service, or
+                        experience to a customer. It connects siloed business capabilities and provides visibility of
+                        the activity flow from customer request to delivery. The value stream is a key concept in Lean
+                        and Agile methodologies, and it is a critical component of the DevOps pipeline. In this video,
+                        we will discuss the value stream and its importance in the technology industry.
+                    </td>
+
+                </tr>
+                <tr>
+                    <td scope="row">
+                        <strong>
+                            Two Pizza Team Rule</strong>
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/_Pupb6MrHG0?si=MCTAXDn9ouQYNRuW"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </td>
+                    <td scope="row">
+                        The two-pizza team rule is often cited as a standard for engineering and product teams to
+                        observe. However, some say that the upper limit for a two-pizza team is somewhere about 15
+                        people, and that it's more important to focus on choosing a team leader with the skills and
+                        experience to get the job done than on the size of the team. In this video, we will discuss the
+                        two-pizza team rule and its importance in the technology industry.
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">
+                        <strong>
+                            Automated Testing</strong>
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/0Qbhx0EjRDc?si=h6i8UaT1Tcrf3Hyl"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </td>
+                    <td scope="row">
+                        In practice, this means that developers gravitate towards writing unit tests to validate the
+                        code works as expected, while quality practitioners and product owners create automated UI tests
+                        that validate the end-to-end user experience.
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">
+                        <strong>
+                            Continuous Integration</strong>
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/WUr7XJp-RRc?si=Dzj3xCmXaLy4LlYN"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </td>
+                    <td scope="row">
+                        Continuous Integration (CI) is a development practice that requires developers to integrate code
+                        into a shared repository several times a day. Each check-in is then verified by an automated
+                        build, allowing teams to detect problems early. By integrating regularly, you can detect errors
+                        quickly, and locate them more easily.
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">
+                        <strong>
+                            Pager Rotation Best Practices</strong>
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/eMDGOxq114Q?si=dsKch5NCSYHRu5ai"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </td>
+                    <td scope="row">
+                        Pager rotation is a practice where a team of engineers takes turns being on-call to respond to
+                        incidents. The goal of pager rotation is to ensure that incidents are addressed quickly and
+                        efficiently, and that the on-call engineer is able to maintain a healthy work-life balance. In
+                        this video, we will discuss pager rotation best practices and its importance in the technology
+                        industry.
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">
+                        <strong>
+                            Changes of Approval Processes</strong>
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/4vjb4ypy1H0?si=tT-QUee00MdbTNOg"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </td>
+                    <td scope="row">
+                        Change approval is the process of reviewing, approving, and scheduling changes to IT services.
+                        The goal of change approval is to ensure that changes are implemented with minimal disruption to
+                        the business, and that they are aligned with the organization's goals and objectives. In this
+                        video, we will discuss change approval processes and their importance in the technology
+                        industry.
+                    </td>
+
+                </tr>
+                <tr>
+                    <td scope="row">
+                        <strong>
+                            Technology Driven vs Business Driven Decisions</strong>
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/C4LXSc3q-eg?si=lmu5o91urEnUfoHg"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </td>
+                    <td scope="row">
+                        Technology-driven decisions are made based on the capabilities of the technology, while
+                        business-driven decisions are made based on the needs of the business. In this video, we will
+                        discuss the differences between technology-driven and business-driven decisions, and the
+                        importance of balancing the two in the technology industry.
+                    </td>
+
+                </tr>
+                <tr>
+                    <td scope="row">
+                        <strong>
+                            Security Control in Code Repositories</strong>
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/Efvdn0va4Ts?si=twBMlOoUIIiqsFVi"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </td>
+                    <td scope="row">
+                        Code repositories are a critical component of the software development lifecycle, and they are
+                        often targeted by attackers. Security controls are necessary to protect code repositories from
+                        unauthorized access, and to ensure that the code is secure. In this video, we will discuss
+                        security controls in code repositories and their importance in the technology industry.
+                    </td>
+
+                </tr>
+                <tr>
+                    <td scope="row">
+                        <strong>
+                            Change Management</strong>
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/oVzzPlNrNNQ?si=8Ey0U1NAe73AxwnC"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </td>
+                    <td scope="row">
+                        Change management is the process of managing changes to IT systems, applications, and
+                        infrastructure. The goal of change management is to ensure that changes are implemented with
+                        minimal disruption to the business, and that they are aligned with the organization's goals and
+                        objectives. In this video, we will discuss change management and its importance in the
+                        technology industry.
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
