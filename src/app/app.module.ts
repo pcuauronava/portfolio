@@ -25,6 +25,10 @@ import { FooterComponent } from './footer/footer.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { ResumeComponent } from './resume/resume.component';
 import { FirebaseTestComponent } from './firebase-test/firebase-test.component';
+import { ProjectListComponent } from './project-list/project-list.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -37,7 +41,8 @@ import { FirebaseTestComponent } from './firebase-test/firebase-test.component';
     NavSidebarComponent,
     FooterComponent,
     ResumeComponent,
-    FirebaseTestComponent
+    FirebaseTestComponent,
+    ProjectListComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +58,10 @@ import { FirebaseTestComponent } from './firebase-test/firebase-test.component';
     MatInputModule,
     MatMenuModule,
     BrowserAnimationsModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
