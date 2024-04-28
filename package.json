@@ -15,7 +15,7 @@
     "export": "firebase emulators:export test-data",
     "testing": "concurrently --kill-others \"npm run start\" \"npm run local-dev\""
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^16.2.0",
     "@angular/cdk": "~16.2.5",
