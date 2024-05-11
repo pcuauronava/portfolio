@@ -1,4 +1,4 @@
-<!-- <div class="main">
+<div class="main">
     <mat-accordion>
         <mat-expansion-panel hideToggle>
             <mat-expansion-panel-header>
@@ -18,12 +18,11 @@
                     Node Shopper Diagrams - WEB335
                 </mat-panel-title>
                 <mat-panel-description>
-                    Currently I am {{panelOpenState ? 'open' : 'closed'}}
-                    <strong>Click here to see it.</strong>
+                    
                     In this we linked the invoices to the users
                 </mat-panel-description>
             </mat-expansion-panel-header>
-            <img src="../../assets/nodeshopper-example.jpg" alt="database-diagram">
+            <img src="https://lionpatportfolio.s3.us-east-2.amazonaws.com/nodeshopper-example.jpg?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEOH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMiJGMEQCIG%2BZgW%2FuE%2BDY7TQ14uWOItM3uyvNr09LaltYJiV9xym0AiAgx26D%2BvEEEjabiIfYRWlFOSQjELQ7A7wGbzNGSqKdmirkAghKEAAaDDU5MDE4Mzk0MTMxMyIM62yySap0QF71VZDDKsECzrCwRyqKac%2Fv7RD3nK%2BPWaiFiiqBPR%2BcK%2FtfhUqfgB1X69D1JeCDxBiiTulYQiGnwQBCVTmo1e5xUED30WXIjremFWWgRPyrSxS3atmSNHiUshE0XaSp3K39%2Bkv6AycCtHH7659diTKHy%2Bqm1%2B7W01IPLmTAsM9u8Rx2yGYd6mw%2BlzSKzJufQHONaC%2F0v74NV9UYhrwWp8q%2BarqB0ekLXdezaQvhoYcOZtuHj56VlJbXkl%2BBoEHb2rBZt0iCftWZV9zeFlCR2eyz8XK3mI7vt%2FaSdjQ5HZkT53rnMm95catg5M0%2BtDYY%2B7cEGzyBkovYIkRKacW7%2Fg4w2TiuTmEpzMoJOJyPjEWHJrDMhIA6nY8L1SdY44WGyF%2BTUW%2BCspfw7FUX4EzhAZuQ6RSAVor81vkuio3%2FvpAzkG9zh%2B8V1U%2B5MMmn%2FrEGOrQCaW2Hmk2wNrhThGMHSMBOqzFvdo81unK58wpfo1z4I%2BKeYqt4WTgfCBed2HIz6UKrmPdE7QYMGyj527Pi7tiyr2W87ZKbmJGFyct0x8hyCMHrd9JYnQU4u5unl7xU89MF92d69LALhsUx%2BUlKqrKpxKQttaquI2LZSj3plDGriR0JqQlf27HIWOOgKhOwFwi8GQcdd7hVlN5wQx7tJBpfxeJOAvpJpe2vpuWDvG%2F0mVN4wqKgZbjeVg65xw7tXgDrVl4ZL2Os7jFeCVvwbeoClYElKwS637nx53M3YLqaEMQSY1d45wqjZ%2FPA8z2dE1%2B0zqJNHcj1HOOP%2F8Td1DL2weqbVGl3Obg4i7lj2nk7vKwJ9xDNC2JUzjUh2hu%2BvELkJSE9Zz8mLfXruL3WbWjX9ixBj%2Fw%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240511T175706Z&X-Amz-SignedHeaders=host&X-Amz-Expires=14400&X-Amz-Credential=ASIAYS2NUITAXDDOUOG4%2F20240511%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Signature=76b3a8094877b697c689e995b51c8456ec7925a1a4e762664d4e7506f1d1b995" alt="database-diagram">
         </mat-expansion-panel>
 
         <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
@@ -32,12 +31,12 @@
                     Node Tech Diagrams - WEB335
                 </mat-panel-title>
                 <mat-panel-description>
-                    Currently I am {{panelOpenState ? 'open' : 'closed'}}
-                    <strong>Click here to see it.</strong>
+                     
+                      
                     In this we linked the courses to the terms to the students
                 </mat-panel-description>
             </mat-expansion-panel-header>
-            <img src="../../assets/nodetech-example.jpg" alt="database-diagram">
+            <img src="https://lionpatportfolio.s3.us-east-2.amazonaws.com/nodetech-example.jpg?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEOH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMiJGMEQCIG%2BZgW%2FuE%2BDY7TQ14uWOItM3uyvNr09LaltYJiV9xym0AiAgx26D%2BvEEEjabiIfYRWlFOSQjELQ7A7wGbzNGSqKdmirkAghKEAAaDDU5MDE4Mzk0MTMxMyIM62yySap0QF71VZDDKsECzrCwRyqKac%2Fv7RD3nK%2BPWaiFiiqBPR%2BcK%2FtfhUqfgB1X69D1JeCDxBiiTulYQiGnwQBCVTmo1e5xUED30WXIjremFWWgRPyrSxS3atmSNHiUshE0XaSp3K39%2Bkv6AycCtHH7659diTKHy%2Bqm1%2B7W01IPLmTAsM9u8Rx2yGYd6mw%2BlzSKzJufQHONaC%2F0v74NV9UYhrwWp8q%2BarqB0ekLXdezaQvhoYcOZtuHj56VlJbXkl%2BBoEHb2rBZt0iCftWZV9zeFlCR2eyz8XK3mI7vt%2FaSdjQ5HZkT53rnMm95catg5M0%2BtDYY%2B7cEGzyBkovYIkRKacW7%2Fg4w2TiuTmEpzMoJOJyPjEWHJrDMhIA6nY8L1SdY44WGyF%2BTUW%2BCspfw7FUX4EzhAZuQ6RSAVor81vkuio3%2FvpAzkG9zh%2B8V1U%2B5MMmn%2FrEGOrQCaW2Hmk2wNrhThGMHSMBOqzFvdo81unK58wpfo1z4I%2BKeYqt4WTgfCBed2HIz6UKrmPdE7QYMGyj527Pi7tiyr2W87ZKbmJGFyct0x8hyCMHrd9JYnQU4u5unl7xU89MF92d69LALhsUx%2BUlKqrKpxKQttaquI2LZSj3plDGriR0JqQlf27HIWOOgKhOwFwi8GQcdd7hVlN5wQx7tJBpfxeJOAvpJpe2vpuWDvG%2F0mVN4wqKgZbjeVg65xw7tXgDrVl4ZL2Os7jFeCVvwbeoClYElKwS637nx53M3YLqaEMQSY1d45wqjZ%2FPA8z2dE1%2B0zqJNHcj1HOOP%2F8Td1DL2weqbVGl3Obg4i7lj2nk7vKwJ9xDNC2JUzjUh2hu%2BvELkJSE9Zz8mLfXruL3WbWjX9ixBj%2Fw%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240511T181722Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43200&X-Amz-Credential=ASIAYS2NUITAXDDOUOG4%2F20240511%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Signature=491d551c43df51a5290becc94d0bbfbcff75a594d7d058172a6f1af7640f7741" alt="database-diagram">
         </mat-expansion-panel>
 
         <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
@@ -46,12 +45,12 @@
                     Node Security Diagrams - WEB335
                 </mat-panel-title>
                 <mat-panel-description>
-                    Currently I am {{panelOpenState ? 'open' : 'closed'}}
-                    <strong>Click here to see it.</strong>
+                     
+                      
                     In this we linked the features to the roles to the users
                 </mat-panel-description>
             </mat-expansion-panel-header>
-            <img src="../../assets/nodeSecurity-example.jpg" alt="database-diagram">
+            <img src="https://lionpatportfolio.s3.us-east-2.amazonaws.com/nodeSecurity-example.jpg?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEOH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMiJGMEQCIG%2BZgW%2FuE%2BDY7TQ14uWOItM3uyvNr09LaltYJiV9xym0AiAgx26D%2BvEEEjabiIfYRWlFOSQjELQ7A7wGbzNGSqKdmirkAghKEAAaDDU5MDE4Mzk0MTMxMyIM62yySap0QF71VZDDKsECzrCwRyqKac%2Fv7RD3nK%2BPWaiFiiqBPR%2BcK%2FtfhUqfgB1X69D1JeCDxBiiTulYQiGnwQBCVTmo1e5xUED30WXIjremFWWgRPyrSxS3atmSNHiUshE0XaSp3K39%2Bkv6AycCtHH7659diTKHy%2Bqm1%2B7W01IPLmTAsM9u8Rx2yGYd6mw%2BlzSKzJufQHONaC%2F0v74NV9UYhrwWp8q%2BarqB0ekLXdezaQvhoYcOZtuHj56VlJbXkl%2BBoEHb2rBZt0iCftWZV9zeFlCR2eyz8XK3mI7vt%2FaSdjQ5HZkT53rnMm95catg5M0%2BtDYY%2B7cEGzyBkovYIkRKacW7%2Fg4w2TiuTmEpzMoJOJyPjEWHJrDMhIA6nY8L1SdY44WGyF%2BTUW%2BCspfw7FUX4EzhAZuQ6RSAVor81vkuio3%2FvpAzkG9zh%2B8V1U%2B5MMmn%2FrEGOrQCaW2Hmk2wNrhThGMHSMBOqzFvdo81unK58wpfo1z4I%2BKeYqt4WTgfCBed2HIz6UKrmPdE7QYMGyj527Pi7tiyr2W87ZKbmJGFyct0x8hyCMHrd9JYnQU4u5unl7xU89MF92d69LALhsUx%2BUlKqrKpxKQttaquI2LZSj3plDGriR0JqQlf27HIWOOgKhOwFwi8GQcdd7hVlN5wQx7tJBpfxeJOAvpJpe2vpuWDvG%2F0mVN4wqKgZbjeVg65xw7tXgDrVl4ZL2Os7jFeCVvwbeoClYElKwS637nx53M3YLqaEMQSY1d45wqjZ%2FPA8z2dE1%2B0zqJNHcj1HOOP%2F8Td1DL2weqbVGl3Obg4i7lj2nk7vKwJ9xDNC2JUzjUh2hu%2BvELkJSE9Zz8mLfXruL3WbWjX9ixBj%2Fw%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240511T181806Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43200&X-Amz-Credential=ASIAYS2NUITAXDDOUOG4%2F20240511%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Signature=8300f6efc56493859eeff4b956a5a9b798126fe82973db9edaf034b44dde0b1f" alt="database-diagram">
         </mat-expansion-panel>
 
         <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
@@ -60,12 +59,12 @@
                     Node Book Co - WEB335
                 </mat-panel-title>
                 <mat-panel-description>
-                    Currently I am {{panelOpenState ? 'open' : 'closed'}}
-                    <strong>Click here to see it.</strong>
+                     
+                      
                     In this we linked the author to the books to the publishers
                 </mat-panel-description>
             </mat-expansion-panel-header>
-            <img src="../../assets/nodebookco-example.jpg" alt="database-diagram">
+            <img src="https://lionpatportfolio.s3.us-east-2.amazonaws.com/nodebookco-example.jpg?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEOH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMiJGMEQCIG%2BZgW%2FuE%2BDY7TQ14uWOItM3uyvNr09LaltYJiV9xym0AiAgx26D%2BvEEEjabiIfYRWlFOSQjELQ7A7wGbzNGSqKdmirkAghKEAAaDDU5MDE4Mzk0MTMxMyIM62yySap0QF71VZDDKsECzrCwRyqKac%2Fv7RD3nK%2BPWaiFiiqBPR%2BcK%2FtfhUqfgB1X69D1JeCDxBiiTulYQiGnwQBCVTmo1e5xUED30WXIjremFWWgRPyrSxS3atmSNHiUshE0XaSp3K39%2Bkv6AycCtHH7659diTKHy%2Bqm1%2B7W01IPLmTAsM9u8Rx2yGYd6mw%2BlzSKzJufQHONaC%2F0v74NV9UYhrwWp8q%2BarqB0ekLXdezaQvhoYcOZtuHj56VlJbXkl%2BBoEHb2rBZt0iCftWZV9zeFlCR2eyz8XK3mI7vt%2FaSdjQ5HZkT53rnMm95catg5M0%2BtDYY%2B7cEGzyBkovYIkRKacW7%2Fg4w2TiuTmEpzMoJOJyPjEWHJrDMhIA6nY8L1SdY44WGyF%2BTUW%2BCspfw7FUX4EzhAZuQ6RSAVor81vkuio3%2FvpAzkG9zh%2B8V1U%2B5MMmn%2FrEGOrQCaW2Hmk2wNrhThGMHSMBOqzFvdo81unK58wpfo1z4I%2BKeYqt4WTgfCBed2HIz6UKrmPdE7QYMGyj527Pi7tiyr2W87ZKbmJGFyct0x8hyCMHrd9JYnQU4u5unl7xU89MF92d69LALhsUx%2BUlKqrKpxKQttaquI2LZSj3plDGriR0JqQlf27HIWOOgKhOwFwi8GQcdd7hVlN5wQx7tJBpfxeJOAvpJpe2vpuWDvG%2F0mVN4wqKgZbjeVg65xw7tXgDrVl4ZL2Os7jFeCVvwbeoClYElKwS637nx53M3YLqaEMQSY1d45wqjZ%2FPA8z2dE1%2B0zqJNHcj1HOOP%2F8Td1DL2weqbVGl3Obg4i7lj2nk7vKwJ9xDNC2JUzjUh2hu%2BvELkJSE9Zz8mLfXruL3WbWjX9ixBj%2Fw%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240511T181832Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43200&X-Amz-Credential=ASIAYS2NUITAXDDOUOG4%2F20240511%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Signature=ae843d52dbe35106926b8e5e46ab5cc885b819adb53774f6b2d46ddf05239bc3" alt="database-diagram">
         </mat-expansion-panel>
 
         <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
@@ -74,18 +73,19 @@
                     Node Whatabook Project - WEB335
                 </mat-panel-title>
                 <mat-panel-description>
-                    Currently I am {{panelOpenState ? 'open' : 'closed'}}
-                    <strong>Click here to see it.</strong>
+                     
+                      
                     This Diagram shows the relationship between the books, the customers and the company Whatabook
                 </mat-panel-description>
             </mat-expansion-panel-header>
-            <img src="../../assets/ORD diagrams.jpg" alt="database-diagram">
+            <img src="https://lionpatportfolio.s3.us-east-2.amazonaws.com/ORD%20diagrams.jpg?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEOH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMiJGMEQCIG%2BZgW%2FuE%2BDY7TQ14uWOItM3uyvNr09LaltYJiV9xym0AiAgx26D%2BvEEEjabiIfYRWlFOSQjELQ7A7wGbzNGSqKdmirkAghKEAAaDDU5MDE4Mzk0MTMxMyIM62yySap0QF71VZDDKsECzrCwRyqKac%2Fv7RD3nK%2BPWaiFiiqBPR%2BcK%2FtfhUqfgB1X69D1JeCDxBiiTulYQiGnwQBCVTmo1e5xUED30WXIjremFWWgRPyrSxS3atmSNHiUshE0XaSp3K39%2Bkv6AycCtHH7659diTKHy%2Bqm1%2B7W01IPLmTAsM9u8Rx2yGYd6mw%2BlzSKzJufQHONaC%2F0v74NV9UYhrwWp8q%2BarqB0ekLXdezaQvhoYcOZtuHj56VlJbXkl%2BBoEHb2rBZt0iCftWZV9zeFlCR2eyz8XK3mI7vt%2FaSdjQ5HZkT53rnMm95catg5M0%2BtDYY%2B7cEGzyBkovYIkRKacW7%2Fg4w2TiuTmEpzMoJOJyPjEWHJrDMhIA6nY8L1SdY44WGyF%2BTUW%2BCspfw7FUX4EzhAZuQ6RSAVor81vkuio3%2FvpAzkG9zh%2B8V1U%2B5MMmn%2FrEGOrQCaW2Hmk2wNrhThGMHSMBOqzFvdo81unK58wpfo1z4I%2BKeYqt4WTgfCBed2HIz6UKrmPdE7QYMGyj527Pi7tiyr2W87ZKbmJGFyct0x8hyCMHrd9JYnQU4u5unl7xU89MF92d69LALhsUx%2BUlKqrKpxKQttaquI2LZSj3plDGriR0JqQlf27HIWOOgKhOwFwi8GQcdd7hVlN5wQx7tJBpfxeJOAvpJpe2vpuWDvG%2F0mVN4wqKgZbjeVg65xw7tXgDrVl4ZL2Os7jFeCVvwbeoClYElKwS637nx53M3YLqaEMQSY1d45wqjZ%2FPA8z2dE1%2B0zqJNHcj1HOOP%2F8Td1DL2weqbVGl3Obg4i7lj2nk7vKwJ9xDNC2JUzjUh2hu%2BvELkJSE9Zz8mLfXruL3WbWjX9ixBj%2Fw%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240511T181856Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43200&X-Amz-Credential=ASIAYS2NUITAXDDOUOG4%2F20240511%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Signature=76cbbb80d3cbe93b70f9a8d8fe5a4db8491e222d7256cdab16c78b0d2e58633b" alt="database-diagram">
         </mat-expansion-panel>
-
         
     </mat-accordion>
-</div>-->
-<div class="under-construction">
+</div>
+<!-- insert this in between the expansion panel to make the panel self aware -->
+<!-- Currently I am {{panelOpenState ? 'open' : 'closed'}} -->
+<!-- <div class="under-construction">
     <h1>Under Construction</h1>
     <p>Sorry, this page is under construction. Please come back later.</p>
-</div>
+</div> -->

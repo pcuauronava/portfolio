@@ -30,6 +30,17 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 
+import { initializeApp } from "firebase/app"
+// import { AngularFireAuthModule, USE_EMULATOR as USE_AUTH_EMULATOR} from '@angular/fire/auth';
+// import { AngularFirestoreModule, USE_EMULATOR as USE_FIRESTORE_EMULATOR} from '@angular/fire/firestore';
+// import { AngularFireFunctionsModule, USE_EMULATOR as USE_FUNCTIONS_EMULATOR} from '@angular/fire/functions';
+// import { environment} from '../environments/environment';
+// import { AngularFireModule} from '@angular/fire';
+// import { AngularFireStorageModule} from '@angular/fire/storage';
+
+// import { AngularFireAuth } from '@angular/fire/auth';
+// import { AngularFirestore} from '@angular/fire/firestore';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,6 +73,8 @@ import { MatSortModule } from '@angular/material/sort';
     MatTableModule,
     MatPaginatorModule,
     MatSortModule
+    // AngularFireAuth,
+    // AngularFirestore
   ],
   providers: [],
   bootstrap: [AppComponent]
