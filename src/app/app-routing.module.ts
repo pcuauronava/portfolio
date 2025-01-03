@@ -1,3 +1,4 @@
+import { JudoThrowsComponent } from './judo-throws/judo-throws.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'projects', component: ProjectsComponent  },
   { path: 'resume', component: ResumeComponent },
   { path: 'firebase-test', component : FirebaseTestComponent},
+  { path: 'judo-throws', component: JudoThrowsComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full'},
   { path: '**', redirectTo: '/home', pathMatch: 'full'}];
 

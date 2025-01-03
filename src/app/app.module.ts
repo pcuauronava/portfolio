@@ -1,3 +1,5 @@
+import { JudoThrowsListComponent } from './judo-throws/judo-throws-list.component';
+// https://www.youtube.com/watch?v=O0uVYhRE850&list=PL1UHgDbN7Tm4SZ6yLE9yDI-YDtf02uc7d minute 5:14
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -27,19 +29,30 @@ import { ResumeComponent } from './resume/resume.component';
 import { FirebaseTestComponent } from './firebase-test/firebase-test.component';
 import { ProjectListComponent } from './project-list/project-list.component';
 import { MatTableModule } from '@angular/material/table';
+import { MatTabsModule } from '@angular/material/tabs'
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { JudoThrowsComponent } from './judo-throws/judo-throws.component';
 
-import { initializeApp } from "firebase/app"
-// import { AngularFireAuthModule, USE_EMULATOR as USE_AUTH_EMULATOR} from '@angular/fire/auth';
-// import { AngularFirestoreModule, USE_EMULATOR as USE_FIRESTORE_EMULATOR} from '@angular/fire/firestore';
-// import { AngularFireFunctionsModule, USE_EMULATOR as USE_FUNCTIONS_EMULATOR} from '@angular/fire/functions';
-// import { environment} from '../environments/environment';
-// import { AngularFireModule} from '@angular/fire';
-// import { AngularFireStorageModule} from '@angular/fire/storage';
+import {
+  AngularFireAuthModule,
+  USE_EMULATOR as USE_AUTH_EMULATOR,
+} from '@angular/fire/compat/auth';
+import {
+  AngularFirestoreModule,
+  USE_EMULATOR as USE_FIRESTORE_EMULATOR,
+} from '@angular/fire/compat/firestore';
+import {
+  AngularFireFunctionsModule,
+  USE_EMULATOR as USE_FUNCTIONS_EMULATOR,
+} from '@angular/fire/compat/functions';
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { environment } from '../environments/environment';
+import { AngularFireModule } from '@angular/fire/compat';
 
-// import { AngularFireAuth } from '@angular/fire/auth';
-// import { AngularFirestore} from '@angular/fire/firestore';
+// import {ReactiveFormsModule} from '@angular/forms';
+
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -53,13 +66,23 @@ import { initializeApp } from "firebase/app"
     FooterComponent,
     ResumeComponent,
     FirebaseTestComponent,
-    ProjectListComponent
+    ProjectListComponent,
+    JudoThrowsComponent,
+    JudoThrowsListComponent,
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
-    MatToolbarModule,
+    AngularFireAuthModule,
+    AngularFireFunctionsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    AngularFireStorageModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatMenuModule,
     MatButtonModule,
+    MatToolbarModule,
+    MatTabsModule,
     MatSidenavModule,
     MatIconModule,
     MatListModule,
@@ -67,16 +90,32 @@ import { initializeApp } from "firebase/app"
     MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
-    MatMenuModule,
-    BrowserAnimationsModule,
     MatExpansionModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
-    // AngularFireAuth,
-    // AngularFirestore
+    MatSortModule,
+    HttpClientModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    {
+      provide: USE_AUTH_EMULATOR,
+      useValue: environment.useEmulators
+        ? ['http://localhost', 9099]
+        : undefined,
+    },
+    {
+      provide: USE_FIRESTORE_EMULATOR,
+      useValue: environment.useEmulators
+        ? ['http://localhost', 8000]
+        : undefined,
+    },
+    {
+      provide: USE_FUNCTIONS_EMULATOR,
+      useValue: environment.useEmulators
+        ? ['http://localhost', 5001]
+        : undefined,
+    },
+  ],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
