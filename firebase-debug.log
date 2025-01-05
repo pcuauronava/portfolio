@@ -205,3 +205,4 @@ INFO: channel closed
 [debug] [2025-01-03T16:39:21.668Z] Jan 03, 2025 11:39:21 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
 INFO: Websocket client disconnected
  {"metadata":{"emulator":{"name":"firestore"},"message":"Jan 03, 2025 11:39:21 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\r\nINFO: Websocket client disconnected\r\n"}}
+[debug] [2025-01-03T17:34:08.892Z] Received signal SIGHUP 1
