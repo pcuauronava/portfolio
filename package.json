@@ -14,7 +14,7 @@
     "emulator": "firebase emulators:start --import test-data",
     "export": "firebase emulators:export test-data"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^16.2.0",
     "@angular/cdk": "~16.2.5",
