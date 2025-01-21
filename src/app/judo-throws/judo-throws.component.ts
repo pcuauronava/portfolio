@@ -1,3 +1,4 @@
+import { JthrowService } from './../services/jthrow.service';
 import { JudoThrow } from './../model/judo-throws';
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
@@ -7,6 +8,7 @@ import { Observable } from 'rxjs';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { JTHROWS } from '../db-data';
 import { MatTable } from '@angular/material/table';
+import { JudoThrowsListComponent } from './judo-throws-list.component';
 
 // import { JthrowServices } from ''
 
@@ -21,17 +23,20 @@ import { MatTable } from '@angular/material/table';
   styleUrls: ['./judo-throws.component.sass'],
 })
 export class JudoThrowsComponent implements OnInit{
+  tewazaThrows$: Observable<JudoThrow[]>;
+  koshiwazaThrows$: Observable<JudoThrow[]>;
+  ashiwazaThrows$: Observable<JudoThrow[]>;
+  sutemiwazaThrows$: Observable<JudoThrow[]>;
+  osaekomiwazaThrows$: Observable<JudoThrow[]>;
+  shimewazaThrows$: Observable<JudoThrow[]>;
+  kansetsuwazaThrows$: Observable<JudoThrow[]>;
+
   constructor(private db: AngularFirestore) {
 
-    // te-wazaThrows$: Observable<JTHROWS[]>;
-    // koshi-wazaThrows$: Observable<JTHROWS[]>;
-    // ashi-wazaThrows$: Observable<JTHROWS[]>;
-    // sutemi-wazaThrows$: Observable<JTHROWS[]>;
-    // osae-komi-wazaThrows$: Observable<JTHROWS[]>;
-    // shime-wazaThrows$: Observable<JTHROWS[]>;
-    // kansetsu-wazaThrows$: Observable<JTHROWS[]>;
 
   }
+
+
   
   async uploadData() {
     const jthrowsCollection = this.db.collection('jthrows');
@@ -64,6 +69,6 @@ export class JudoThrowsComponent implements OnInit{
     // .collection("/jthrows/0w6c9M4GlJvTD8iUV9rW")
   }
   ngOnInit() {
-    // this.te-wazaThrows$ = this.
+    // this.tewazaThrows$ = this.
   }
 }

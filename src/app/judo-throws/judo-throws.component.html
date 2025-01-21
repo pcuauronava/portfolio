@@ -21,36 +21,10 @@
 <mat-tab-group>
     <mat-tab label="te-waza">
 
-        <!-- <courses-card-list [courses]="beginnersCourses$ | async"
-            (courseEdited)="reloadCourses()"
-            (courseDeleted)="reloadCourses()">
-            </courses-card-list> -->
+        <!-- <app-judo-throws-list [jthrows]="tewazaThrow$ | async">
 
-        <!-- <jthrows-card-list [jthrows]="koshi-waza$ | async"
-            (courseEdited)="reloadCourses()"
-            (courseDeleted)="reloadCourses()">
-            </jthrows-card-list>
-            <jthrows-card-list [jthrows]="koshi-waza$ | async"
-            (courseEdited)="reloadCourses()"
-            (courseDeleted)="reloadCourses()">
-            </jthrows-card-list>
-            <jthrows-card-list [jthrows]="koshi-waza$ | async"
-            (courseEdited)="reloadCourses()"
-            (courseDeleted)="reloadCourses()">
-            </jthrows-card-list>
-            <jthrows-card-list [jthrows]="koshi-waza$ | async"
-            (courseEdited)="reloadCourses()"
-            (courseDeleted)="reloadCourses()">
-            </jthrows-card-list>
-            <jthrows-card-list [jthrows]="koshi-waza$ | async"
-            (courseEdited)="reloadCourses()"
-            (courseDeleted)="reloadCourses()">
-            </jthrows-card-list>
-            <jthrows-card-list [jthrows]="koshi-waza$ | async"
-            (courseEdited)="reloadCourses()"
-            (courseDeleted)="reloadCourses()">
-            </jthrows-card-list>
-            -->
+        </app-judo-throws-list> -->
+
 
 
     </mat-tab>
@@ -73,12 +47,13 @@
             
     </mat-tab>
 </mat-tab-group>
+    <hr>
 <button mat-raised-button class="upload-btn" color="primary" (click)="uploadData()">Populate Database</button>
     <hr>
 
     <button mat-raised-button color="accent" (click)="onReadDoc()">Read Document</button>
     <hr>
 
-    <!-- <button mat-raised-button color="accent">Read Collection</button>
-    <hr> -->
+    <button mat-raised-button color="accent">Read Collection</button>
+    <hr>
 </div>
