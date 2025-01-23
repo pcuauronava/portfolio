@@ -1,59 +1,42 @@
 <div class="about">
-<!-- in this page I want to list all the judo techniques I have stored, either in the online
- firestore database or the  emulator. Remember to check the configuration in the firestore files-->
-    <h2>Judo Techniques</h2>
-
+In this page I want to list all the judo techniques I have stored, either in the online
+ firestore database or the  emulator.
+ <!-- Remember to check the configuration in the firestore files -->
     <!-- <img class="judo-throws mat-elevation-z10" src="https://thumbs2.imgbox.com/e7/69/78QhJlRB_t.png" alt="image host"> -->
+    <!-- <img class="judo-throws mat-elevation-z10" src="../../assets/judo.png" alt="image host"> -->
+    <!-- <hr> -->
     <!-- <a href="https://www.flaticon.com/free-icons/judo" title="judo icons">Judo icons created by photo3idea_studio - Flaticon</a> -->
-    <hr>
+    <!-- <hr> -->
     
 </div>
 <div>
     <div class="header">
-        <h2 class="title">Judo Throws</h2>
-
-        <button mat-mini-fab color="accent">
-            <mat-icon class="add-course-btn">add</mat-icon>
-        </button>
+        <h1 class="title">Judo Techniques</h1>
     </div>
 </div>
 <div>
 <mat-tab-group>
-    <mat-tab label="te-waza">
-
-        <!-- <app-judo-throws-list [jthrows]="tewazaThrow$ | async">
-
-        </app-judo-throws-list> -->
-
-
-
+    <mat-tab label="Te-waza -- Hand">
+        <app-judo-throws-list [jthrows]="tewazaThrows$ | async"></app-judo-throws-list>
     </mat-tab>
-    <mat-tab label="koshi-waza">
-        
+    <mat-tab label="Koshi-waza -- Hip">
+        <app-judo-throws-list [jthrows]="koshiwazaThrows$ | async"></app-judo-throws-list>        
     </mat-tab>
-    <mat-tab label="ashi-waza">
-
+    <mat-tab label="Ashi-waza -- Foot or leg">
+        <app-judo-throws-list [jthrows]="ashiwazaThrows$ | async"></app-judo-throws-list>
     </mat-tab>
-    <mat-tab label="sutemi-waza">
-            
+    <mat-tab label="Sutemi-waza -- Sacrifice">
+        <app-judo-throws-list [jthrows]="sutemiwazaThrows$ | async"></app-judo-throws-list>
     </mat-tab>
-    <mat-tab label="osae-komi-waza">
-            
+    <mat-tab label="Osae-komi-waza -- Hold-down">
+        <app-judo-throws-list [jthrows]="osaekomiwazaThrows$ | async"></app-judo-throws-list>
     </mat-tab>
-    <mat-tab label="shime-waza">
-            
+    <mat-tab label="Shime-waza -- Strangling">
+        <app-judo-throws-list [jthrows]="shimewazaThrows$ | async"></app-judo-throws-list>        
     </mat-tab>
-    <mat-tab label="kansetsu-waza">
-            
+    <mat-tab label="Kansetsu-waza -- Joint locks">
+        <app-judo-throws-list [jthrows]="kansetsuwazaThrows$ | async"></app-judo-throws-list>
     </mat-tab>
 </mat-tab-group>
-    <hr>
-<button mat-raised-button class="upload-btn" color="primary" (click)="uploadData()">Populate Database</button>
-    <hr>
-
-    <button mat-raised-button color="accent" (click)="onReadDoc()">Read Document</button>
-    <hr>
-
-    <button mat-raised-button color="accent">Read Collection</button>
-    <hr>
+<!-- <button mat-raised-button class="upload-btn" color="primary" (click)="uploadData()">Populate Database</button> -->
 </div>
