@@ -17,7 +17,7 @@ export const JTHROWS: any = {
     difficulty: 'easy',
     score: 8,
     rank: 'nan-kyu',
-    url: '',
+    url: 'test-check',
   },
   3: {
     id: 3,

@@ -106,7 +106,7 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
     {
       provide: USE_FIRESTORE_EMULATOR,
       useValue: environment.useEmulators
-        ? ['http://localhost', 8000]
+        ? ['http://127.0.0.1', 8080]
         : undefined,
     },
     {
