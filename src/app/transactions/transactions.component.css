@@ -1,0 +1,11 @@
+h1, p, div, about {
+  margin: 12px;
+}
+
+transaction-card {
+  margin: 20px 10px;
+}
+
+transaction-actions {
+  text-align: center;
+}/*# sourceMappingURL=transactions.component.css.map */

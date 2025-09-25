@@ -1,0 +1,31 @@
+<!-- <p>transactions works!</p> -->
+<!-- <p>In this page I will show the transactions</p> -->
+
+<div>
+    <div class="header">
+        <h1 class="title">Transaction Categories</h1>
+    </div>
+</div>
+<div>
+    <mat-tab-group>
+        <mat-tab label="Housing">
+            <app-transaction-list [transactions]="housingTransaction$ | async"></app-transaction-list>
+        </mat-tab>
+    </mat-tab-group>
+    <mat-tab-group>
+        <mat-tab label="Food">
+            <app-transaction-list [transactions]="foodTransaction$ | async"></app-transaction-list>
+        </mat-tab>
+    </mat-tab-group>
+    <mat-tab-group>
+        <mat-tab label="Transportation">
+            <app-transaction-list [transactions]="transportationTransaction$ | async"></app-transaction-list>
+        </mat-tab>
+    </mat-tab-group>
+    <mat-tab-group>
+        <mat-tab label="Utilities">
+            <app-transaction-list [transactions]="utilitiesTransaction$ | async"></app-transaction-list>
+        </mat-tab>
+    </mat-tab-group>
+    <!-- <button mat-raised-button class="upload-btn" color="primary" (click)="uploadData()">Populate Database</button> -->
+</div>

@@ -33,7 +33,7 @@ export class JudoThrowsComponent implements OnInit {
   ) {}
 
   async uploadData() {
-    console.log("before action");
+    console.log('before action');
     const jthrowsCollection = this.db.collection('jthrows');
     const jthrows = await this.db.collection('jthrows').get();
     for (let jthrow of Object.values(JTHROWS)) {
@@ -42,7 +42,7 @@ export class JudoThrowsComponent implements OnInit {
       //Using the example form the firebase course, there are lessons in the course
       //but in this case the judo throws don't have a sub category.
       console.log(`Uploading throw ${['name']}`);
-      console.log("after action");
+      console.log('after action');
     }
   }
   removeId(data: any) {
@@ -55,7 +55,7 @@ export class JudoThrowsComponent implements OnInit {
     this.reloadJthrows();
   }
   reloadJthrows() {
-    console.log("loading throws");
+    console.log('loading throws');
     this.tewazaThrows$ = this.jthrowService.loadJThrowsByCategory('Te-waza');
     this.koshiwazaThrows$ =
       this.jthrowService.loadJThrowsByCategory('Koshi-waza');
@@ -69,6 +69,6 @@ export class JudoThrowsComponent implements OnInit {
       this.jthrowService.loadJThrowsByCategory('Shime-waza');
     this.kansetsuwazaThrows$ =
       this.jthrowService.loadJThrowsByCategory('Kansetsu-waza');
-      console.log("throws loaded");
+    console.log('throws loaded');
   }
 }

@@ -1,0 +1,23 @@
+<!-- <p>transaction-list works!</p> -->
+<mat-card *ngFor="let transaction of transactions" class="transaction-card mat-elevation-z10">
+    <mat-card-header>
+        <mat-card-title>
+            <h2>Account</h2>
+            <h2>{{transaction.account}}</h2>
+        </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p>Date</p>
+        <p>{{transaction.date}}</p>
+        <p>Account</p>
+        <p>{{transaction.account}}</p>
+        <p>Subcategory</p>
+        <p>{{transaction.subcategory}}</p>
+        <p>Category </p>
+        <p>{{transaction.category}}</p>
+        <p>Amount</p>
+        <p>{{transaction.amount}}</p>
+        <p>Balance</p>
+        <p>{{transaction.balance}}</p>
+    </mat-card-content>
+</mat-card>

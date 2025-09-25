@@ -1,0 +1,39 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 200px 200px;
+  gap: 16px;
+  padding: 10px;
+  position: relative;
+}
+
+.background-layer {
+  grid-column: 1/span 3;
+  grid-row: 1/span 2;
+  z-index: 1;
+}
+
+.overlay-layer {
+  grid-column: 2;
+  grid-row: 1/span 2;
+  z-index: 2;
+}
+
+mat-card {
+  width: 100%;
+  height: 100%;
+}
+
+/* For smaller screens (e.g., mobile) */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .background-layer,
+  .overlay-layer {
+    grid-column: 1;
+    grid-row: auto;
+    z-index: auto;
+  }
+}/*# sourceMappingURL=layered-grid.component.css.map */

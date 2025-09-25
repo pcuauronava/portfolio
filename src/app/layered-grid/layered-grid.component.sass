@@ -1,0 +1,45 @@
+.grid-container
+  display: grid
+  grid-template-columns: repeat(3, 1fr) // Creates a 3-column grid
+  grid-template-rows: 200px 200px      // Creates two rows with a fixed height
+  gap: 16px
+  padding: 10px                          // Adds spacing between grid items
+  position: relative                 // Required for positioning child elements
+
+.background-layer
+  grid-column: 1 / span 3 // Spans across all 3 columns
+  grid-row: 1 / span 2    // Spans across both rows
+  z-index: 1              // Defines the lowest layer
+
+
+.overlay-layer 
+  grid-column: 2          // Positions this item in the second column
+  grid-row: 1 / span 2    // Spans across both rows
+  z-index: 2              // Sits on top of the background layer
+
+
+mat-card 
+  width: 100%
+  height: 100%
+
+.grid-container 
+  // ... (previous styles)
+
+
+// ... (previous layer styles)
+
+/* For smaller screens (e.g., mobile) */
+@media (max-width: 768px) 
+  .grid-container 
+    grid-template-columns: 1fr // Changes to a single column on smaller screens
+    grid-template-rows: auto
+  
+
+  .background-layer,
+  .overlay-layer 
+    grid-column: 1
+    grid-row: auto
+    z-index: auto // Remove z-index to place content sequentially
+    
+  
+

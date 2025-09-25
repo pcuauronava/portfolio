@@ -1,13 +1,32 @@
 <mat-card *ngFor="let jthrow of jthrows" class="jthrow-card mat-elevation-z10">
-    <mat-card-header>
-      <mat-card-title><h2>{{jthrow.name}}</h2></mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-      <!-- <p>{{jthrow.id}}</p> -->
-      <p>{{jthrow.description}}</p>
-      <!-- <p>{{jthrow.categories}}</p> -->
-      <!-- <p>{{jthrow.difficulty}}</p> -->
-       <!-- <p>{{jthrow.url}}</p> -->
-      <!-- <p>{{jthrow.score}}</p> -->
-    </mat-card-content>
-  </mat-card>
+  <mat-card-header>
+    <mat-card-title>
+      <h2>{{jthrow.name}}</h2>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <!-- <p>{{jthrow.name}}</p> -->
+  </mat-card-content>
+    <mat-card-actions class="course-actions">
+      
+      <!-- <ng-container>
+        <button mat-button class="mat-raised-button mat-accent">
+          EDIT
+        </button>
+        <button mat-mini-fab>
+          <mat-icon>delete</mat-icon>
+        </button>
+      </ng-container> -->
+      
+      
+    </mat-card-actions>
+    <!-- <p>{{jthrow.id}}</p> -->
+    <p>Description</p>
+    <p>{{jthrow.description}}</p>
+    <!-- <p>{{jthrow.categories}}</p> -->
+    <!-- <p>Difficulty</p> -->
+    <!-- <p>{{jthrow.difficulty}}</p> -->
+    <!-- <p>{{jthrow.url}}</p> -->
+    <!-- <p>Score</p> -->
+    <!-- <p>{{jthrow.score}}</p> -->
+</mat-card>

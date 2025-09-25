@@ -18,6 +18,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatMenuModule } from '@angular/material/menu';
@@ -29,7 +30,7 @@ import { ResumeComponent } from './resume/resume.component';
 import { FirebaseTestComponent } from './firebase-test/firebase-test.component';
 import { ProjectListComponent } from './project-list/project-list.component';
 import { MatTableModule } from '@angular/material/table';
-import { MatTabsModule } from '@angular/material/tabs'
+import { MatTabsModule } from '@angular/material/tabs';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { JudoThrowsComponent } from './judo-throws/judo-throws.component';
@@ -50,9 +51,13 @@ import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
 
-// import {ReactiveFormsModule} from '@angular/forms';
+import {ReactiveFormsModule} from '@angular/forms';
 
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { TransactionsComponent } from './transactions/transactions.component';
+import { TransactionListComponent } from './transactions/transaction-list.component';
+import { CreateTransactionComponent } from './transactions/create-transaction.component';
+import { LayeredGridComponent } from './layered-grid/layered-grid.component';
 
 @NgModule({
   declarations: [
@@ -69,6 +74,10 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
     ProjectListComponent,
     JudoThrowsComponent,
     JudoThrowsListComponent,
+    TransactionsComponent,
+    TransactionListComponent,
+    CreateTransactionComponent,
+    LayeredGridComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -89,12 +98,14 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
     MatCardModule,
     MatDialogModule,
     MatFormFieldModule,
+    MatGridListModule,
     MatInputModule,
     MatExpansionModule,
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
     HttpClientModule,
+    
   ],
   providers: [
     {
@@ -106,7 +117,7 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
     {
       provide: USE_FIRESTORE_EMULATOR,
       useValue: environment.useEmulators
-        ? ['http://127.0.0.1', 8080]
+        ? ['http://localhost', 8080]
         : undefined,
     },
     {
