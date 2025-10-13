@@ -36,6 +36,8 @@ export class TransactionsComponent implements OnInit {
       const transactionRef = await transactionsCollection.add(newTransaction);
       console.log(`Uploading transaction ${['name']}`);
     }
+    console.log('data upload complete');
+    this.reloadTransactions();
   }
   removeId(data: any) {
     const newData: any = { ...data };

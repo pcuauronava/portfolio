@@ -1,23 +1,37 @@
-<!-- <p>transaction-list works!</p> -->
 <mat-card *ngFor="let transaction of transactions" class="transaction-card mat-elevation-z10">
-    <mat-card-header>
-        <mat-card-title>
-            <h2>Account</h2>
-            <h2>{{transaction.account}}</h2>
-        </mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-        <p>Date</p>
-        <p>{{transaction.date}}</p>
-        <p>Account</p>
-        <p>{{transaction.account}}</p>
-        <p>Subcategory</p>
-        <p>{{transaction.subcategory}}</p>
-        <p>Category </p>
+  <mat-card-header>
+    <!-- <mat-card-title>
+      <h2>ID</h2>
+      <h2>{{transaction.id}}</h2>
+    </mat-card-title> -->
+  </mat-card-header>
+  <mat-card-content>
+    <!-- <p><b>Date</b></p>
+        <p>{{transaction.date}}</p> -->
+    <p><b>Account</b></p>
+    <p>{{transaction.account}}</p>
+    <hr>
+    <p><b>Subcategory</b></p>
+    <p>{{transaction.subcategory}}</p>
+    <hr>
+    <!-- <p><b>Category</b></p>
         <p>{{transaction.category}}</p>
-        <p>Amount</p>
-        <p>{{transaction.amount}}</p>
-        <p>Balance</p>
-        <p>{{transaction.balance}}</p>
-    </mat-card-content>
+        <hr> -->
+    <p><b>Amount</b></p>
+    <p>${{transaction.amount}}</p>
+    <!-- <p><b>Balance</b></p>
+        <p>{{transaction.balance}}</p> -->
+  </mat-card-content>
+  <mat-card-actions>
+    <ng-container>
+      <button mat-button class="mat-raised-button mat-accent">
+        <mat-icon>edit</mat-icon>
+
+      </button>
+      <button mat-mini-fab (click)="onDeleteTransaction(transaction)">
+
+        <mat-icon>delete</mat-icon>
+      </button>
+    </ng-container>
+  </mat-card-actions>
 </mat-card>

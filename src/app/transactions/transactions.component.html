@@ -9,23 +9,23 @@
 <div>
     <mat-tab-group>
         <mat-tab label="Housing">
-            <app-transaction-list [transactions]="housingTransaction$ | async"></app-transaction-list>
+            <app-transaction-list [transactions]="housingTransaction$ | async" (transactionDeleted)="reloadTransactions()"></app-transaction-list>
         </mat-tab>
     </mat-tab-group>
     <mat-tab-group>
         <mat-tab label="Food">
-            <app-transaction-list [transactions]="foodTransaction$ | async"></app-transaction-list>
+            <app-transaction-list [transactions]="foodTransaction$ | async" (transactionDeleted)="reloadTransactions()"></app-transaction-list>
         </mat-tab>
     </mat-tab-group>
     <mat-tab-group>
         <mat-tab label="Transportation">
-            <app-transaction-list [transactions]="transportationTransaction$ | async"></app-transaction-list>
+            <app-transaction-list [transactions]="transportationTransaction$ | async" (transactionDeleted)="reloadTransactions()"></app-transaction-list>
         </mat-tab>
     </mat-tab-group>
     <mat-tab-group>
         <mat-tab label="Utilities">
-            <app-transaction-list [transactions]="utilitiesTransaction$ | async"></app-transaction-list>
+            <app-transaction-list [transactions]="utilitiesTransaction$ | async" (transactionDeleted)="reloadTransactions()"></app-transaction-list>
         </mat-tab>
     </mat-tab-group>
-    <!-- <button mat-raised-button class="upload-btn" color="primary" (click)="uploadData()">Populate Database</button> -->
+    <button mat-raised-button class="upload-btn" color="primary" (click)="uploadData()">Populate Database</button>
 </div>

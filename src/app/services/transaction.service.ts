@@ -15,8 +15,9 @@ export class TransactionService {
 
   loadTransactionsByCategory(category: string): Observable<Transaction[]> {
     return this.db
-      .collection('transactions', (ref) =>
-        ref.where('category', 'array-contains', category)
+      .collection('transactions',
+         (ref) =>
+        ref.where('category', '==', category)
       )
       .get()
       .pipe(map((result) => convertSnaps<Transaction>(result)));
@@ -57,5 +58,8 @@ export class TransactionService {
           );
         })
       );
+  }
+  deleteTransaction (transactionId: string) {
+    return from(this.db.doc(`transactions/${transactionId}`).delete());
   }
 }
