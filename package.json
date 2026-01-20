@@ -12,7 +12,8 @@
     "local-dev": "firebase emulators:start --only firestore,auth,functions --import alldata",
     "empty-emulator": "firebase emulators:start",
     "emulator": "firebase emulators:start --import test-data",
-    "export": "firebase emulators:export test-data"
+    "export": "firebase emulators:export test-data",
+    "testing": "concurrently --kill-others \"npm run start\" \"npm run local-dev\""
   },
   "private": true,
   "dependencies": {
@@ -28,6 +29,7 @@
     "@angular/platform-browser": "^16.2.0",
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
+    "concurrently": "^9.2.1",
     "firebase": "^10.12.5",
     "firebase-tools": "^13.13.3",
     "firebaseui": "^4.7.3",

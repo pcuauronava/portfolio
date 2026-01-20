@@ -1,0 +1,17 @@
+<div>
+    <mat-grid-list cols="3" rowHeight="300px">
+        
+        <mat-grid-tile><a href="https://youtube.com">Youtube</a></mat-grid-tile>
+        <mat-grid-tile><a href="https://x.com">X</a></mat-grid-tile>
+        <!-- <mat-grid-tile rowspan="3">
+            <div class="elfsight-app-fb2c50d9-f7eb-41e0-837b-ef9a76311d2d" data-elfsight-app-lazy></div>
+        </mat-grid-tile> -->
+        <mat-grid-tile><a href="https://gmail.com">Gmail</a></mat-grid-tile>
+        <mat-grid-tile><a href="https://castlife.disney.com/home/discover">Cast Life</a></mat-grid-tile>
+    </mat-grid-list>
+
+    <p>Welcome to my homepage, the purpose of the page is to introduce myself and help in some way.</p>
+    <p>Some pages are Still in development and sometimes I keep refreshing my knowledge and adding some more by fixing
+        and applying new features to it.</p>
+    <p>Feel free to navigate through the site. I am receiving suggestions and ideas, thank you for visiting.</p>
+</div>

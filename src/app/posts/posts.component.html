@@ -1,0 +1,9 @@
+<button mat-button class="mat-raised-button" routerLink="/posts-create">Add New Post
+    <mat-icon class="mat-raised-button">add</mat-icon>
+</button>
+<mat-card>
+    <app-posts-list [Posts]="activePosts$ | async" (postEdited)="reloadPosts()" (postDeleted)="reloadPosts()">
+        <!-- we have to detect the emission of the postEdited and run the function to reload all the posts -->
+        <!-- If we have more than one children component we have to apply the event detection to all of them -->
+    </app-posts-list>
+</mat-card>

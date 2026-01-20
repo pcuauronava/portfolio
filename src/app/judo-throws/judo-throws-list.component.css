@@ -1,9 +1,9 @@
-jthrow-card {
+mat-card {
   margin: 20px 10px;
-  text-align: center;
+  padding: 30px;
+  background-color: rgba(245, 245, 245, 0.6901960784);
 }
 
-jthrow-actions {
+card-actions {
   text-align: center;
 }/*# sourceMappingURL=judo-throws-list.component.css.map */
-
