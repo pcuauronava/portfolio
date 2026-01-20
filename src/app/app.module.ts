@@ -22,6 +22,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component';
@@ -34,6 +35,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { JudoThrowsComponent } from './judo-throws/judo-throws.component';
+import { EditPostDialogComponent } from './posts/edit-post-dialog.component';
 
 import {
   AngularFireAuthModule,
@@ -51,13 +53,17 @@ import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
 
-import {ReactiveFormsModule} from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { TransactionsComponent } from './transactions/transactions.component';
 import { TransactionListComponent } from './transactions/transaction-list.component';
 import { CreateTransactionComponent } from './transactions/create-transaction.component';
 import { LayeredGridComponent } from './layered-grid/layered-grid.component';
+import { LoginComponent } from './login/login.component';
+import { PostsComponent } from './posts/posts.component';
+import { PostsListComponent } from './posts/posts-list.component';
+import { PostCreateComponent } from './posts/post-create.component';
 
 @NgModule({
   declarations: [
@@ -78,6 +84,11 @@ import { LayeredGridComponent } from './layered-grid/layered-grid.component';
     TransactionListComponent,
     CreateTransactionComponent,
     LayeredGridComponent,
+    LoginComponent,
+    PostsComponent,
+    PostsListComponent,
+    PostCreateComponent,
+    EditPostDialogComponent
   ],
   imports: [
     AppRoutingModule,
@@ -100,12 +111,13 @@ import { LayeredGridComponent } from './layered-grid/layered-grid.component';
     MatFormFieldModule,
     MatGridListModule,
     MatInputModule,
+    MatSlideToggleModule,
+    ReactiveFormsModule,
     MatExpansionModule,
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
     HttpClientModule,
-    
   ],
   providers: [
     {

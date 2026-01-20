@@ -10,6 +10,9 @@ import { ResumeComponent } from './resume/resume.component';
 import { FirebaseTestComponent } from './firebase-test/firebase-test.component';
 import { TransactionsComponent } from './transactions/transactions.component';
 import { LayeredGridComponent } from './layered-grid/layered-grid.component';
+import { LoginComponent } from './login/login.component';
+import { PostsComponent } from './posts/posts.component';
+import { PostCreateComponent } from './posts/post-create.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -22,6 +25,9 @@ const routes: Routes = [
   { path: 'judo-throws', component: JudoThrowsComponent },
   { path: 'transactions', component: TransactionsComponent },
   { path: 'layered-grid', component: LayeredGridComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'posts', component: PostsComponent },
+  { path: 'posts-create', component: PostCreateComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];

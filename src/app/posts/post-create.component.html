@@ -1,0 +1,21 @@
+<div class="create-post">
+    <h3>Create New Post</h3>
+    <hr>
+    <form [formGroup]="form">
+        <mat-form-field appearance="outline">
+            <input placeholder="Post Title" matInput formControlName="title">
+        </mat-form-field>
+        <hr>
+        <mat-form-field appearance="outline">
+            <textarea matInput placeholder="Type here" formControlName="content"></textarea>
+        </mat-form-field>
+        <hr>
+        <!-- <mat-form-field appearance="outline">
+            <mat-slide-toggle formControlName="active">Active</mat-slide-toggle>
+        </mat-form-field>
+        <hr> -->
+        <!-- There's something wrong with the expression above -->
+        <button mat-raised-button color="warn" [disabled]=!form.valid (click)="onCreatePost()">Create Post</button>
+        <button mat-raised-button color="primary" routerLink="/posts">Cancel</button>
+    </form>
+</div>
