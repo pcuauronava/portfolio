@@ -1,0 +1,33 @@
+Example for Initial comments in each file.
+Example for Typescript files:
+/**
+*
+* Date:
+* Author:
+* Title:
+* Description:
+* Last Modified:
+* Remarks:
+*
+*/
+Example for HTML files:
+
+<!-- 
+Date:
+Author:
+Title:
+Description:
+Last Modified:
+Remarks:
+ -->
+
+Example for SASS files:
+
+//
+// Date:
+// Author:
+// Title:
+// Description:
+// Last Modified:
+// Remarks:
+// 

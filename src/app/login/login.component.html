@@ -1,14 +1,32 @@
+<!-- 
+Date: January 27, 2026 
+Author: Patrick Cuauro
+Title: login.component.html
+Description: Login Template
+Last Modified: February 3, 2026
+Remarks: Modified the login form to match the angular material
+ -->
+
 <div class="login-container">
-    <form>
-        <h2>Login</h2>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-        </div>
-        <button type="submit">Sign In</button>
+    <h2>Login</h2>
+    <hr>
+    <form [formGroup]="form">
+        <mat-form-field appearance="outline">
+            <input matInput placeholder="email" matInput formControlName="email">
+        </mat-form-field>
+        <hr>
+        <mat-form-field appearance="outline">
+            <input matInput placeholder="password" formControlName="password" required>
+        </mat-form-field>
+        <hr>
+
+        <button mat-raised-button color="warm" [disabled]=!form.valid (click)="onLogin()">Sign In</button>
+        <button mat-raised-button color="primary" routerLink="/">Cancel</button>
+        <!-- <button mat-raised-button color="primary" (click)="onLogout()">logout</button> -->
     </form>
+</div>
+<div class="anonymous">
+    <h4>for testing purposes you can login using:</h4>
+    <p>email: user@test.com</p>
+    <p>password: testing</p>
 </div>

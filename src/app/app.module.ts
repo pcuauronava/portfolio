@@ -36,6 +36,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { JudoThrowsComponent } from './judo-throws/judo-throws.component';
 import { EditPostDialogComponent } from './posts/edit-post-dialog.component';
+import { CookieService } from 'ngx-cookie-service';
 
 import {
   AngularFireAuthModule,
@@ -64,6 +65,9 @@ import { LoginComponent } from './login/login.component';
 import { PostsComponent } from './posts/posts.component';
 import { PostsListComponent } from './posts/posts-list.component';
 import { PostCreateComponent } from './posts/post-create.component';
+
+import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
+// import { initializeUI } from '@firebase-oss/ui-core';
 
 @NgModule({
   declarations: [
@@ -117,7 +121,7 @@ import { PostCreateComponent } from './posts/post-create.component';
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    HttpClientModule,
+    HttpClientModule
   ],
   providers: [
     {
@@ -137,7 +141,7 @@ import { PostCreateComponent } from './posts/post-create.component';
       useValue: environment.useEmulators
         ? ['http://localhost', 5001]
         : undefined,
-    },
+    }
   ],
   bootstrap: [AppComponent],
 })
