@@ -1,3 +1,13 @@
+/**
+*
+* Date: Jan 26, 2026
+* Author: Patrick
+* Title: Posts Component
+* Description: This component displays a list of posts.
+* Last Modified: Jan 26, 2026
+* Remarks: No additional remarks.
+*/
+
 import { Post } from '../model/posts';
 import {
   Component,

@@ -1,3 +1,13 @@
+/**
+*
+* Date: January 26, 2026
+* Author: Patrick Cuauro
+* Title: post-create.component.ts
+* Description: This file contains the PostCreateComponent implementation.
+* Last Modified: January 26, 2026
+* Remarks: N/A
+*/
+
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
@@ -22,7 +32,12 @@ export class PostCreateComponent implements OnInit {
     content: ['', [Validators.required]],
     active: [true],
   });
-  constructor(private fb: FormBuilder, private postService: PostService, private afs: AngularFirestore, private router: Router) {}
+  constructor(
+    private fb: FormBuilder, 
+    private postService: PostService, 
+    private afs: AngularFirestore, 
+    private router: Router
+  ) {}
   ngOnInit() {
     this.postId = this.afs.createId();
     

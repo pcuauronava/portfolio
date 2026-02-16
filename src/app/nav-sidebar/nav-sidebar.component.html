@@ -1,21 +1,33 @@
+<!-- 
+Date: January 26, 2026
+Author: Patrick Cuauro
+Title: nav-sidebar.component.html
+Description: Template for the navigation bar
+Last Modified: February 5, 2026
+Remarks: added some icons to the links, added logout
+ -->
+
+
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
     <mat-toolbar>
-      <a mat-list-item href="/"><mat-icon>home</mat-icon></a>
     </mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink="/about">About</a>
-      <a mat-list-item routerLink="/transactions">Finances</a>
-      <a mat-list-item routerLink="/diagrams">Database Diagrams</a>
-      <a mat-list-item routerLink="/presentations">Presentations</a>
-      <a mat-list-item routerLink="/projects">Projects</a>
-      <a mat-list-item routerLink="/resume">Resume</a>
-      <a mat-list-item routerLink="/judo-throws">Judo</a>
-      <a mat-list-item routerLink="/posts">Posts</a>
+      <a mat-list-item routerLink="/"><mat-icon>home</mat-icon><span>Home</span></a>
+      <a mat-list-item routerLink="/login"
+        *ngIf="user.isLoggedOut$ |async"><mat-icon>login</mat-icon><span></span>Login</a>
+      <a mat-list-item routerLink="/about"><mat-icon>info</mat-icon><span></span>About</a>
+      <a mat-list-item routerLink="/transactions"><mat-icon>point_of_sale</mat-icon><span></span>Finances</a>
+      <a mat-list-item routerLink="/diagrams"><mat-icon>schema</mat-icon><span></span>Database Diagrams</a>
+      <a mat-list-item routerLink="/presentations"><mat-icon>slideshow</mat-icon><span></span>Presentations</a>
+      <a mat-list-item routerLink="/projects"><mat-icon>architecture</mat-icon><span></span>Projects</a>
+      <a mat-list-item routerLink="/resume"><mat-icon>books</mat-icon><span></span>Resume</a>
+      <a mat-list-item routerLink="/judo-throws"><mat-icon>sports_martial_arts</mat-icon><span></span>Judo</a>
+      <a mat-list-item routerLink="/posts" *ngIf="user.isLoggedIn$ |async" ><mat-icon>question_answer</mat-icon><span></span>Posts</a>
+      <a mat-list-item (click)="onLogout()"
+        *ngIf="user.isLoggedIn$ |async"><mat-icon>logout</mat-icon><span>Logout</span></a>
 
-      <!-- <a mat-list-item routerLink="/login">Login</a> -->
-      <!-- <a mat-list-item routerLink="/layered-grid">Grid</a> -->
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
