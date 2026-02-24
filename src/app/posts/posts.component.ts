@@ -26,9 +26,10 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 @Component({
-  selector: 'app-posts',
-  templateUrl: './posts.component.html',
-  styleUrls: ['./posts.component.sass'],
+    selector: 'app-posts',
+    templateUrl: './posts.component.html',
+    styleUrls: ['./posts.component.sass'],
+    standalone: false
 })
 export class PostsComponent implements OnInit {
   posts$: Observable<Post[]>;

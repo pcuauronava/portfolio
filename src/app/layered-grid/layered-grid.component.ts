@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-layered-grid',
-  templateUrl: './layered-grid.component.html',
-  styleUrls: ['./layered-grid.component.sass']
+    selector: 'app-layered-grid',
+    templateUrl: './layered-grid.component.html',
+    styleUrls: ['./layered-grid.component.sass'],
+    standalone: false
 })
 export class LayeredGridComponent {
 

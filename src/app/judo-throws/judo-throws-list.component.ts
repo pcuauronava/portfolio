@@ -3,9 +3,10 @@ import { Component, EventEmitter, Input, OnInit } from '@angular/core';
 import { JudoThrow } from '../model/judo-throws';
 
 @Component({
-  selector: 'app-judo-throws-list',
-  templateUrl: './judo-throws-list.component.html',
-  styleUrls: ['./judo-throws-list.component.sass'],
+    selector: 'app-judo-throws-list',
+    templateUrl: './judo-throws-list.component.html',
+    styleUrls: ['./judo-throws-list.component.sass'],
+    standalone: false
 })
 export class JudoThrowsListComponent implements OnInit {
   @Input()

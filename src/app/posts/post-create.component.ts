@@ -21,9 +21,10 @@ import { Router } from '@angular/router';
 
 
 @Component({
-  selector: 'app-post-create',
-  templateUrl: './post-create.component.html',
-  styleUrls: ['./post-create.component.sass'],
+    selector: 'app-post-create',
+    templateUrl: './post-create.component.html',
+    styleUrls: ['./post-create.component.sass'],
+    standalone: false
 })
 export class PostCreateComponent implements OnInit {
   postId: string;

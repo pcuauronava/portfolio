@@ -27,9 +27,10 @@ import { UserService } from '../services/user.service';
 import { User } from '../model/user';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.sass'],
+    selector: 'app-login',
+    templateUrl: './login.component.html',
+    styleUrls: ['./login.component.sass'],
+    standalone: false
 })
 export class LoginComponent implements OnInit {
   form = this.fb.group({

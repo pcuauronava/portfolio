@@ -7,9 +7,10 @@ import { tap } from 'rxjs/operators';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
-  selector: 'app-edit-post-dialog',
-  templateUrl: './edit-post-dialog.component.html',
-  styleUrls: ['./edit-post-dialog.component.sass'],
+    selector: 'app-edit-post-dialog',
+    templateUrl: './edit-post-dialog.component.html',
+    styleUrls: ['./edit-post-dialog.component.sass'],
+    standalone: false
 })
 export class EditPostDialogComponent {
   form: FormGroup;

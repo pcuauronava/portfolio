@@ -4,8 +4,9 @@ import { MatCardModule } from '@angular/material/card';
 import { PostService } from '../services/post.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.sass'],
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.sass'],
+    standalone: false
 })
 export class HomeComponent {}

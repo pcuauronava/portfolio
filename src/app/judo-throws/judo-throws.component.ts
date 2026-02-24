@@ -14,9 +14,10 @@ import { JudoThrowsListComponent } from './judo-throws-list.component';
 //to use a J in front of throw.
 
 @Component({
-  selector: 'app-judo-throws',
-  templateUrl: './judo-throws.component.html',
-  styleUrls: ['./judo-throws.component.sass'],
+    selector: 'app-judo-throws',
+    templateUrl: './judo-throws.component.html',
+    styleUrls: ['./judo-throws.component.sass'],
+    standalone: false
 })
 export class JudoThrowsComponent implements OnInit {
   tewazaThrows$: Observable<JudoThrow[]>;

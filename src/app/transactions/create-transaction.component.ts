@@ -12,9 +12,10 @@ import firebase from 'firebase/compat';
 import Timestamp = firebase.firestore.Timestamp;
 
 @Component({
-  selector: 'app-create-transaction',
-  templateUrl: './create-transaction.component.html',
-  styleUrls: ['./create-transaction.component.sass'],
+    selector: 'app-create-transaction',
+    templateUrl: './create-transaction.component.html',
+    styleUrls: ['./create-transaction.component.sass'],
+    standalone: false
 })
 export class CreateTransactionComponent implements OnInit {
   transactionId: string;

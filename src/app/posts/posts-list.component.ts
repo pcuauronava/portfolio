@@ -10,9 +10,10 @@ import { Router } from '@angular/router';
 import { catchError, throwError } from 'rxjs';
 
 @Component({
-  selector: 'app-posts-list',
-  templateUrl: './posts-list.component.html',
-  styleUrls: ['./posts-list.component.sass'],
+    selector: 'app-posts-list',
+    templateUrl: './posts-list.component.html',
+    styleUrls: ['./posts-list.component.sass'],
+    standalone: false
 })
 export class PostsListComponent implements OnInit {
   @Input()

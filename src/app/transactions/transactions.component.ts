@@ -9,9 +9,10 @@ import { MatTable } from '@angular/material/table';
 import { TransactionListComponent } from './transaction-list.component';
 
 @Component({
-  selector: 'app-transactions',
-  templateUrl: './transactions.component.html',
-  styleUrls: ['./transactions.component.sass'],
+    selector: 'app-transactions',
+    templateUrl: './transactions.component.html',
+    styleUrls: ['./transactions.component.sass'],
+    standalone: false
 })
 export class TransactionsComponent implements OnInit {
   housingTransaction$: Observable<Transaction[]>;

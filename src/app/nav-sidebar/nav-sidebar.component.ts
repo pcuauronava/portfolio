@@ -19,9 +19,10 @@ import { UserService } from '../services/user.service';
 import { User } from '../model/user';
 
 @Component({
-  selector: 'app-nav-sidebar',
-  templateUrl: './nav-sidebar.component.html',
-  styleUrls: ['./nav-sidebar.component.scss'],
+    selector: 'app-nav-sidebar',
+    templateUrl: './nav-sidebar.component.html',
+    styleUrls: ['./nav-sidebar.component.scss'],
+    standalone: false
 })
 export class NavSidebarComponent {
   // private userService = inject(UserService);

@@ -4,9 +4,10 @@ import { Transaction } from '../model/transactions';
 import { tap } from 'rxjs';
 
 @Component({
-  selector: 'app-transaction-list',
-  templateUrl: './transaction-list.component.html',
-  styleUrls: ['./transaction-list.component.sass'],
+    selector: 'app-transaction-list',
+    templateUrl: './transaction-list.component.html',
+    styleUrls: ['./transaction-list.component.sass'],
+    standalone: false
 })
 export class TransactionListComponent implements OnInit {
   @Input()
