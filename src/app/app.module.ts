@@ -56,7 +56,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { TransactionsComponent } from './transactions/transactions.component';
 import { TransactionListComponent } from './transactions/transaction-list.component';
 import { CreateTransactionComponent } from './transactions/create-transaction.component';
@@ -69,80 +69,74 @@ import { PostCreateComponent } from './posts/post-create.component';
 import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
 // import { initializeUI } from '@firebase-oss/ui-core';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    AboutComponent,
-    PresentationsComponent,
-    DiagramsComponent,
-    ProjectsComponent,
-    NavSidebarComponent,
-    FooterComponent,
-    ResumeComponent,
-    FirebaseTestComponent,
-    ProjectListComponent,
-    JudoThrowsComponent,
-    JudoThrowsListComponent,
-    TransactionsComponent,
-    TransactionListComponent,
-    CreateTransactionComponent,
-    LayeredGridComponent,
-    LoginComponent,
-    PostsComponent,
-    PostsListComponent,
-    PostCreateComponent,
-    EditPostDialogComponent
-  ],
-  imports: [
-    AppRoutingModule,
-    AngularFireAuthModule,
-    AngularFireFunctionsModule,
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule,
-    AngularFireStorageModule,
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatMenuModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatTabsModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule,
-    MatCardModule,
-    MatDialogModule,
-    MatFormFieldModule,
-    MatGridListModule,
-    MatInputModule,
-    MatSlideToggleModule,
-    ReactiveFormsModule,
-    MatExpansionModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatSortModule,
-    HttpClientModule
-  ],
-  providers: [
-    {
-      provide: USE_AUTH_EMULATOR,
-      useValue: environment.useEmulators
-        ? ['http://localhost', 9099]
-        : undefined,
-    },
-    {
-      provide: USE_FIRESTORE_EMULATOR,
-      useValue: environment.useEmulators
-        ? ['http://localhost', 8080]
-        : undefined,
-    },
-    {
-      provide: USE_FUNCTIONS_EMULATOR,
-      useValue: environment.useEmulators
-        ? ['http://localhost', 5001]
-        : undefined,
-    }
-  ],
-  bootstrap: [AppComponent],
-})
+@NgModule({ declarations: [
+        AppComponent,
+        HomeComponent,
+        AboutComponent,
+        PresentationsComponent,
+        DiagramsComponent,
+        ProjectsComponent,
+        NavSidebarComponent,
+        FooterComponent,
+        ResumeComponent,
+        FirebaseTestComponent,
+        ProjectListComponent,
+        JudoThrowsComponent,
+        JudoThrowsListComponent,
+        TransactionsComponent,
+        TransactionListComponent,
+        CreateTransactionComponent,
+        LayeredGridComponent,
+        LoginComponent,
+        PostsComponent,
+        PostsListComponent,
+        PostCreateComponent,
+        EditPostDialogComponent
+    ],
+    bootstrap: [AppComponent], imports: [AppRoutingModule,
+        AngularFireAuthModule,
+        AngularFireFunctionsModule,
+        AngularFireModule.initializeApp(environment.firebase),
+        AngularFirestoreModule,
+        AngularFireStorageModule,
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatMenuModule,
+        MatButtonModule,
+        MatToolbarModule,
+        MatTabsModule,
+        MatSidenavModule,
+        MatIconModule,
+        MatListModule,
+        MatCardModule,
+        MatDialogModule,
+        MatFormFieldModule,
+        MatGridListModule,
+        MatInputModule,
+        MatSlideToggleModule,
+        ReactiveFormsModule,
+        MatExpansionModule,
+        MatTableModule,
+        MatPaginatorModule,
+        MatSortModule], providers: [
+        {
+            provide: USE_AUTH_EMULATOR,
+            useValue: environment.useEmulators
+                ? ['http://localhost', 9099]
+                : undefined,
+        },
+        {
+            provide: USE_FIRESTORE_EMULATOR,
+            useValue: environment.useEmulators
+                ? ['http://localhost', 8080]
+                : undefined,
+        },
+        {
+            provide: USE_FUNCTIONS_EMULATOR,
+            useValue: environment.useEmulators
+                ? ['http://localhost', 5001]
+                : undefined,
+        },
+        provideHttpClient(withInterceptorsFromDi())
+    ] })
 export class AppModule {}
